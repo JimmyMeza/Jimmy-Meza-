@@ -1,0 +1,20 @@
+Resultados esperados
+
+Usando los valores que te piden:
+
+Bisección: intervalo [0.6, 0.7]
+Newton:x0=0.5
+Secante:x0=0.5, x1=0.7
+La raíz aproximada es:
+
+x≈0.739085
+Iteraciones típicas:
+Bisección: ~20–25 iteraciones
+Newton-Raphson: ~4–6 iteraciones
+Secante: ~5–7 iteraciones
+
+¿Qué método converge más rápido? ¿por qué?
+El método que converge más rápido es Newton–Raphson.
+La razón es que utiliza la derivada de la función para estimar directamente la pendiente en cada punto, lo que le permite “apuntar” de forma más precisa hacia la raíz en cada iteración. Esto hace que el error disminuya muy rápidamente conforme avanza el proceso.
+En cambio, el método de la secante aproxima esa pendiente usando dos puntos, por lo que es un poco menos eficiente, y el método de bisección solo reduce el intervalo paso a paso sin usar información de la forma de la función, lo que lo hace más lento.
+En resumen: Newton–Raphson converge más rápido porque aprovecha información adicional (la derivada), logrando una aproximación mucho más eficiente en cada iteración.
